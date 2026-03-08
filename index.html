@@ -1,197 +1,114 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Уборка после ремонта</title>
-  <meta name="description" content="Профессиональная уборка после ремонта. Удаление строительной пыли, следов краски, клея и грязи. Работаем от юга до центра Израиля." />
+  <title>שירותי הובלה, ניקיון אחרי שיפוץ ותיקונים קטנים</title>
+  <meta name="description" content="במקום אחד: הובלות, ניקיון אחרי שיפוץ ותיקונים קטנים לבית ולעסק. שירות מהיר, מסודר ונוח." />
   <style>
     :root{
-      --bg:#f7f8fa;
+      --bg:#f6f7f9;
       --card:#ffffff;
-      --text:#1b1f23;
-      --muted:#5f6b76;
+      --text:#1f2937;
+      --muted:#6b7280;
       --accent:#1f8f4e;
-      --accent-dark:#16673a;
-      --line:#e6e8eb;
-      --shadow:0 10px 30px rgba(0,0,0,.08);
+      --accent-dark:#16683a;
+      --line:#e5e7eb;
+      --shadow:0 10px 28px rgba(0,0,0,.08);
       --radius:18px;
-      --max:1120px;
+      --max:1180px;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
     body{
       margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
       background:var(--bg);
-      line-height:1.5;
+      color:var(--text);
+      line-height:1.55;
     }
     a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    .container{
-      width:min(calc(100% - 32px), var(--max));
-      margin:0 auto;
-    }
+    .container{width:min(calc(100% - 32px), var(--max)); margin:0 auto;}
     .topbar{
-      position:sticky;
-      top:0;
-      z-index:50;
+      position:sticky; top:0; z-index:50;
       background:rgba(255,255,255,.92);
       backdrop-filter:blur(10px);
       border-bottom:1px solid rgba(0,0,0,.05);
     }
     .nav{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      min-height:70px;
+      min-height:72px;
+      display:flex; align-items:center; justify-content:space-between; gap:20px;
     }
-    .logo{
-      font-weight:800;
-      letter-spacing:.2px;
-      font-size:20px;
-    }
-    .nav-links{
-      display:flex;
-      gap:18px;
-      align-items:center;
-      color:var(--muted);
-      font-size:15px;
-    }
+    .logo{font-size:22px; font-weight:800}
+    .nav-links{display:flex; gap:18px; color:var(--muted); font-size:15px}
     .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      padding:14px 22px;
-      border-radius:999px;
-      border:none;
-      cursor:pointer;
-      font-weight:700;
-      transition:.2s ease;
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:14px 22px; border-radius:999px; font-weight:700;
+      transition:.2s ease; border:none; cursor:pointer;
     }
-    .btn-primary{
-      background:var(--accent);
-      color:#fff;
-      box-shadow:var(--shadow);
-    }
+    .btn-primary{background:var(--accent); color:#fff; box-shadow:var(--shadow)}
     .btn-primary:hover{background:var(--accent-dark); transform:translateY(-1px)}
-    .btn-secondary{
-      background:#fff;
-      color:var(--text);
-      border:1px solid var(--line);
-    }
-    .hero{
-      padding:56px 0 28px;
-    }
+    .btn-secondary{background:#fff; color:var(--text); border:1px solid var(--line)}
+
+    .hero{padding:56px 0 28px}
     .hero-grid{
-      display:grid;
-      grid-template-columns:1.15fr .85fr;
-      gap:28px;
-      align-items:center;
+      display:grid; grid-template-columns:1.1fr .9fr; gap:26px; align-items:center;
     }
-    .hero-card,
     .card{
       background:var(--card);
       border-radius:var(--radius);
       box-shadow:var(--shadow);
       border:1px solid rgba(0,0,0,.04);
     }
-    .hero-card{
-      padding:42px;
-    }
+    .hero-card{padding:40px}
     .badge{
       display:inline-block;
+      margin-bottom:18px;
       padding:8px 12px;
       border-radius:999px;
-      background:#eef8f1;
+      background:#eaf7ef;
       color:var(--accent-dark);
-      font-weight:700;
       font-size:13px;
-      margin-bottom:18px;
+      font-weight:800;
     }
-    h1,h2,h3{
-      margin:0 0 14px;
-      line-height:1.1;
-    }
-    h1{
-      font-size:clamp(34px, 5vw, 58px);
-      letter-spacing:-.02em;
-    }
-    h2{
-      font-size:clamp(28px, 4vw, 40px);
-      letter-spacing:-.02em;
-    }
-    p{
-      margin:0 0 16px;
-      color:var(--muted);
-      font-size:17px;
-    }
-    .hero-actions{
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      margin-top:22px;
-    }
-    .hero-note{
-      margin-top:18px;
-      font-size:14px;
-      color:var(--muted);
-    }
+    h1,h2,h3{margin:0 0 14px; line-height:1.1}
+    h1{font-size:clamp(34px,5vw,58px); letter-spacing:-.02em}
+    h2{font-size:clamp(28px,4vw,40px); letter-spacing:-.02em}
+    h3{font-size:24px}
+    p{margin:0 0 16px; color:var(--muted); font-size:17px}
+    .hero-actions{display:flex; flex-wrap:wrap; gap:12px; margin-top:20px}
     .hero-visual{
-      min-height:100%;
+      min-height:520px;
       overflow:hidden;
       position:relative;
-    }
-    .hero-visual .photo{
-      min-height:520px;
       background:
-        linear-gradient(180deg, rgba(0,0,0,.14), rgba(0,0,0,.02)),
-        url("https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+        linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.03)),
+        url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
     }
     .hero-box{
-      position:absolute;
-      right:18px;
-      bottom:18px;
-      left:18px;
+      position:absolute; right:18px; left:18px; bottom:18px;
       background:rgba(255,255,255,.94);
       border-radius:16px;
       padding:18px;
-      box-shadow:var(--shadow);
     }
-    .hero-box strong{display:block;font-size:18px;margin-bottom:6px}
-    section{
-      padding:28px 0;
-    }
-    .section-head{
-      max-width:760px;
-      margin-bottom:22px;
-    }
-    .grid-2{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:22px;
-    }
-    .grid-3{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:22px;
-    }
-    .card{
-      padding:26px;
-    }
-    .list{
-      list-style:none;
+    .hero-box strong{display:block; margin-bottom:6px; font-size:18px}
+
+    section{padding:28px 0}
+    .section-head{max-width:760px; margin-bottom:22px}
+    .services{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+    .service-card{padding:28px}
+    .service-card ul{
+      margin:0 0 18px;
       padding:0;
-      margin:0;
+      list-style:none;
       display:grid;
-      gap:14px;
-    }
-    .list li{
-      display:flex;
       gap:12px;
+    }
+    .service-card li{
+      display:flex;
+      gap:10px;
       align-items:flex-start;
       color:var(--text);
     }
@@ -199,203 +116,138 @@
       width:28px;
       height:28px;
       border-radius:999px;
-      background:#eef8f1;
+      background:#eaf7ef;
       color:var(--accent-dark);
       display:inline-flex;
       align-items:center;
       justify-content:center;
       font-weight:800;
       flex:0 0 28px;
-      margin-top:1px;
     }
-    .gallery{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:16px;
-    }
-    .gallery .item{
-      border-radius:18px;
-      overflow:hidden;
-      box-shadow:var(--shadow);
-      min-height:260px;
-      position:relative;
-      background:#ddd;
-    }
-    .gallery .item:nth-child(1){
-      background:url("https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
-    }
-    .gallery .item:nth-child(2){
-      background:url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
-    }
-    .gallery .item:nth-child(3){
-      background:url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80") center/cover no-repeat;
-    }
-    .gallery .label{
-      position:absolute;
-      left:12px;
-      bottom:12px;
-      background:rgba(255,255,255,.92);
-      padding:8px 12px;
+    .adv-grid{display:grid; grid-template-columns:1fr 1fr; gap:22px}
+    .adv-card{padding:28px}
+    .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+    .step{padding:24px}
+    .step-num{
+      width:42px;
+      height:42px;
       border-radius:999px;
-      font-size:13px;
-      font-weight:700;
-    }
-    .quote{
-      font-size:17px;
-      color:var(--text);
-    }
-    .quote small{
-      display:block;
-      margin-top:10px;
-      color:var(--muted);
-      font-size:14px;
-    }
-    .cta{
-      padding:18px 0 56px;
-    }
-    .cta-box{
-      padding:34px;
-      background:linear-gradient(135deg, #1f8f4e 0%, #14723d 100%);
+      background:var(--accent);
       color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:800;
+      margin-bottom:14px;
+    }
+    .cta{padding:16px 0 56px}
+    .cta-box{
+      background:linear-gradient(135deg,#1f8f4e 0%,#146b3b 100%);
+      color:#fff;
+      padding:34px;
       border-radius:24px;
       box-shadow:var(--shadow);
     }
-    .cta-box p{
-      color:rgba(255,255,255,.88);
-      max-width:700px;
-    }
-    footer{
-      padding:22px 0 40px;
-      color:var(--muted);
-      font-size:14px;
-    }
+    .cta-box p{color:rgba(255,255,255,.9); max-width:760px}
+    footer{padding:24px 0 40px; color:var(--muted); font-size:14px}
     .footer-line{
+      border-top:1px solid var(--line);
+      padding-top:16px;
       display:flex;
       justify-content:space-between;
       gap:12px;
       flex-wrap:wrap;
-      border-top:1px solid var(--line);
-      padding-top:16px;
     }
-    .muted{color:var(--muted)}
-    .price-note{
-      font-size:15px;
-      color:var(--muted);
-      margin-top:10px;
-    }
-    @media (max-width: 900px){
-      .hero-grid, .grid-2, .grid-3, .gallery{
-        grid-template-columns:1fr;
-      }
+
+    @media (max-width: 980px){
+      .hero-grid,.services,.adv-grid,.steps{grid-template-columns:1fr}
+      .nav-links{display:none}
       .hero-card{padding:28px}
-      .hero-visual .photo{min-height:360px}
-      .nav-links{
-        display:none;
-      }
+      .hero-visual{min-height:340px}
     }
   </style>
 </head>
 <body>
   <div class="topbar">
     <div class="container nav">
-      <div style="display:flex; align-items:center; gap:14px;">
-  <div class="logo">Чистый объект</div>
-  <div style="font-size:14px; color:#5f6b76;">
-    <a href="index.html" style="font-weight:700;">RU</a> |
-    <a href="he.html">עברית</a>
-  </div>
-</div>
+      <div class="logo">הכל במקום אחד</div>
       <div class="nav-links">
-        <a href="#service">Услуга</a>
-        <a href="#advantages">Преимущества</a>
-        <a href="#gallery">Фото</a>
-        <a href="#reviews">Отзывы</a>
-        <a href="#contact">Контакты</a>
+        <a href="#services">שירותים</a>
+        <a href="#advantages">למה אנחנו</a>
+        <a href="#how">איך מזמינים</a>
+        <a href="#contact">יצירת קשר</a>
       </div>
-      <a class="btn btn-primary" id="waTop" href="#" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-primary" href="#services">לקבלת הצעת מחיר</a>
     </div>
   </div>
 
   <header class="hero">
     <div class="container hero-grid">
-      <div class="hero-card">
-        <div class="badge">Уборка после ремонта • Юг и центр Израиля</div>
-        <h1>Профессиональная уборка после ремонта</h1>
+      <div class="card hero-card">
+        <div class="badge">הובלות • ניקיון אחרי שיפוץ • תיקונים קטנים</div>
+        <h1>שירותים לבית ולעסק במקום אחד</h1>
         <p>
-          После ремонта помещение может выглядеть новым, но на деле остаются строительная пыль,
-          следы краски, цемента, клея и грязь после работ. Мы делаем глубокую уборку и доводим
-          объект до состояния, в которое можно нормально заезжать, жить или сдавать клиенту.
+          אצלנו לא צריך לחפש שלושה בעלי מקצוע שונים. אפשר להזמין במקום אחד
+          הובלה, ניקיון אחרי שיפוץ ושירותי תיקונים קטנים לבית ולעסק.
+        </p>
+        <p>
+          היתרון שלנו הוא פשוט: כשצריך כמה שירותים יחד, אנחנו חוסכים לכם זמן,
+          טלפונים מיותרים ובלגן. כתובת אחת לכל מה שצריך.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" id="waHero" href="#" target="_blank" rel="noopener">Получить оценку в WhatsApp</a>
-          <a class="btn btn-secondary" href="#service">Посмотреть, что входит</a>
-        </div>
-        <div class="hero-note">
-          Напишите город, отправьте фото объекта и короткое описание — это ускорит предварительную оценку.
+          <a class="btn btn-primary" href="#services">לשירותים שלנו</a>
+          <a class="btn btn-secondary" href="#advantages">למה לבחור בנו</a>
         </div>
       </div>
 
-      <div class="hero-card hero-visual" aria-hidden="true">
-        <div class="photo"></div>
+      <div class="hero-visual">
         <div class="hero-box">
-          <strong>Что убираем</strong>
-          <div class="muted">Строительную пыль, следы краски, клея, загрязнения после ремонта, окна, поверхности, кухню и санузлы.</div>
+          <strong>פתרון מלא במקום אחד</strong>
+          <div>הובלה, ניקיון אחרי שיפוץ ותיקונים קטנים — בלי לרדוף אחרי כמה ספקים שונים.</div>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="service">
+  <section id="services">
     <div class="container">
       <div class="section-head">
-        <h2>Что входит в уборку</h2>
-        <p>
-          Мы не делаем видимость чистоты. Наша задача — привести помещение в порядок после строительных работ
-          так, чтобы им можно было пользоваться без ощущения, что ремонт всё ещё продолжается.
-        </p>
+        <h2>השירותים שלנו</h2>
+        <p>בחרו את השירות שאתם צריכים ושלחו הודעה ישירות ב-WhatsApp.</p>
       </div>
 
-      <div class="grid-2">
-        <div class="card">
-          <h3>Основные работы</h3>
-          <ul class="list">
-            <li><span class="icon">✓</span><span>Удаление строительной пыли со всех основных поверхностей</span></li>
-            <li><span class="icon">✓</span><span>Уборка полов, углов, плинтусов и труднодоступных мест</span></li>
-            <li><span class="icon">✓</span><span>Очистка окон, рам, подоконников и стеклянных поверхностей</span></li>
-            <li><span class="icon">✓</span><span>Удаление следов краски, клея и строительных загрязнений</span></li>
+      <div class="services">
+        <div class="card service-card">
+          <h3>הובלות</h3>
+          <p>הובלות לדירות, משרדים, פריטים בודדים וציוד מגוון.</p>
+          <ul>
+            <li><span class="icon">✓</span><span>הובלות לכל מטרה</span></li>
+            <li><span class="icon">✓</span><span>דירות, משרדים ופריטים בודדים</span></li>
+            <li><span class="icon">✓</span><span>שירות מהיר ומסודר</span></li>
           </ul>
+          <a class="btn btn-primary" id="wa-moving" href="#" target="_blank" rel="noopener">WhatsApp להובלות</a>
         </div>
-        <div class="card">
-          <h3>Финальная доводка</h3>
-          <ul class="list">
-            <li><span class="icon">✓</span><span>Глубокая уборка кухни и санузлов</span></li>
-            <li><span class="icon">✓</span><span>Очистка всех основных поверхностей перед заселением</span></li>
-            <li><span class="icon">✓</span><span>Подготовка объекта к проживанию, работе или сдаче</span></li>
-            <li><span class="icon">✓</span><span>Предварительная оценка по фото в WhatsApp</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="audience">
-    <div class="container">
-      <div class="section-head">
-        <h2>Для кого подходит услуга</h2>
-        <p>Эта уборка нужна не только частным клиентам. Она подходит всем, кому нужно быстро и качественно привести объект в порядок после ремонта.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Квартиры и дома</h3>
-          <p>Для владельцев жилья, которые хотят въехать в чистое помещение, а не в остатки строительного процесса.</p>
+        <div class="card service-card">
+          <h3>ניקיון אחרי שיפוץ</h3>
+          <p>ניקיון יסודי אחרי עבודות שיפוץ ובנייה, כולל אבק, צבע ולכלוך בנייה.</p>
+          <ul>
+            <li><span class="icon">✓</span><span>ניקיון עמוק ויסודי</span></li>
+            <li><span class="icon">✓</span><span>אבק בנייה, צבע, דבק ולכלוך</span></li>
+            <li><span class="icon">✓</span><span>לדירות, משרדים ועסקים</span></li>
+          </ul>
+          <a class="btn btn-primary" id="wa-cleaning" href="#" target="_blank" rel="noopener">WhatsApp לניקיון</a>
         </div>
-        <div class="card">
-          <h3>Подрядчики и бригады</h3>
-          <p>Когда объект нужно сдать аккуратно и без следов строительной грязи.</p>
-        </div>
-        <div class="card">
-          <h3>Офисы и коммерция</h3>
-          <p>Для магазинов, офисов и других помещений, которые нужно быстро подготовить к открытию или работе.</p>
+
+        <div class="card service-card">
+          <h3>תיקונים קטנים / הנדימן</h3>
+          <p>פתרונות מהירים לעבודות קטנות בבית או בעסק.</p>
+          <ul>
+            <li><span class="icon">✓</span><span>עבודות קטנות בבית ובעסק</span></li>
+            <li><span class="icon">✓</span><span>שירות נוח ומהיר</span></li>
+            <li><span class="icon">✓</span><span>חוסך זמן והתעסקות</span></li>
+          </ul>
+          <a class="btn btn-primary" id="wa-handyman" href="#" target="_blank" rel="noopener">WhatsApp לתיקונים</a>
         </div>
       </div>
     </div>
@@ -404,57 +256,53 @@
   <section id="advantages">
     <div class="container">
       <div class="section-head">
-        <h2>Почему обращаются к нам</h2>
-        <p>После ремонта обычной уборки недостаточно. Нужен опыт именно в послестроительной уборке, внимание к деталям и нормальная коммуникация без лишней суеты.</p>
+        <h2>למה לבחור בנו</h2>
+        <p>במקום אחד תוכלו להזמין כמה שירותים שונים בלי לרדוף אחרי כמה בעלי מקצוע ובלי לבזבז זמן.</p>
       </div>
-      <div class="grid-2">
-        <div class="card">
-          <ul class="list">
-            <li><span class="icon">✓</span><span>Опыт работы с уборкой после ремонта</span></li>
-            <li><span class="icon">✓</span><span>Профессиональная техника и материалы</span></li>
-            <li><span class="icon">✓</span><span>Тщательный подход, а не уборка для галочки</span></li>
-          </ul>
+
+      <div class="adv-grid">
+        <div class="card adv-card">
+          <h3>היתרון המרכזי שלנו</h3>
+          <p>
+            אם אתם צריכים הובלה, ניקיון אחרי שיפוץ ותיקונים קטנים —
+            אין צורך לעבוד מול שלושה ספקים שונים. הכל במקום אחד.
+          </p>
         </div>
-        <div class="card">
-          <ul class="list">
-            <li><span class="icon">✓</span><span>Внимание к деталям, которые часто пропускают</span></li>
-            <li><span class="icon">✓</span><span>Быстрый ответ и согласование через WhatsApp</span></li>
-            <li><span class="icon">✓</span><span>Работаем от юга до центра Израиля</span></li>
+        <div class="card adv-card">
+          <h3>מה זה נותן לכם</h3>
+          <ul style="margin:0; padding:0; list-style:none; display:grid; gap:12px;">
+            <li><span class="icon">✓</span><span>פחות טלפונים ופחות בלגן</span></li>
+            <li><span class="icon">✓</span><span>תקשורת פשוטה ומהירה ב-WhatsApp</span></li>
+            <li><span class="icon">✓</span><span>אפשרות להזמין שירות אחד או כמה יחד</span></li>
+            <li><span class="icon">✓</span><span>פתרון נוח לבית ולעסק</span></li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="gallery">
+  <section id="how">
     <div class="container">
       <div class="section-head">
-        <h2>Фото и результат</h2>
-        <p>Пока можно оставить эти изображения как временные. Потом их лучше заменить на твои реальные фото объектов — это усилит доверие сильнее любого текста.</p>
+        <h2>איך מזמינים</h2>
+        <p>תהליך פשוט, מהיר וברור.</p>
       </div>
-      <div class="gallery">
-        <div class="item"><div class="label">Чистый результат</div></div>
-        <div class="item"><div class="label">После ремонта</div></div>
-        <div class="item"><div class="label">Готово к заселению</div></div>
-      </div>
-    </div>
-  </section>
 
-  <section id="reviews">
-    <div class="container">
-      <div class="section-head">
-        <h2>Отзывы клиентов</h2>
-        <p>Ниже — временные примеры. Лучше заменить на реальные отзывы из WhatsApp или скриншоты с разрешения клиентов.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card">
-          <div class="quote">“После ремонта квартира была вся в пыли. Сделали реально глубокую уборку, и помещение наконец стало пригодным для жизни.”<small>— Клиент, квартира после ремонта</small></div>
+      <div class="steps">
+        <div class="card step">
+          <div class="step-num">1</div>
+          <h3>בוחרים שירות</h3>
+          <p>הובלה, ניקיון אחרי שיפוץ או תיקונים קטנים.</p>
         </div>
-        <div class="card">
-          <div class="quote">“Приехали вовремя, всё согласовали быстро, результат аккуратный. Видно, что понимают именно этот тип уборки.”<small>— Клиент, объект после строительных работ</small></div>
+        <div class="card step">
+          <div class="step-num">2</div>
+          <h3>שולחים הודעה</h3>
+          <p>פונים ב-WhatsApp עם פרטים קצרים ותמונות אם צריך.</p>
         </div>
-        <div class="card">
-          <div class="quote">“Нужно было срочно привести помещение в порядок перед сдачей. Справились чётко и без лишних разговоров.”<small>— Клиент, коммерческий объект</small></div>
+        <div class="card step">
+          <div class="step-num">3</div>
+          <h3>מקבלים מענה</h3>
+          <p>חוזרים אליכם עם תשובות, תיאום והצעת מחיר.</p>
         </div>
       </div>
     </div>
@@ -463,32 +311,34 @@
   <section id="contact" class="cta">
     <div class="container">
       <div class="cta-box">
-        <h2>Хотите узнать стоимость уборки?</h2>
+        <h2>צריכים כמה שירותים יחד?</h2>
         <p>
-          Отправьте в WhatsApp город, фото объекта и короткое описание. Чем точнее информация, тем быстрее можно дать предварительную оценку.
+          זה בדיוק היתרון שלנו. במקום לחפש כמה אנשי מקצוע, אצלנו אפשר לקבל
+          פתרון מסודר במקום אחד.
         </p>
-        <a class="btn btn-secondary" id="waBottom" href="#" target="_blank" rel="noopener">Написать в WhatsApp</a>
-        <div class="price-note">Совет: отвечайте быстро на входящие. Даже хороший лендинг сливает клиента, если после клика его оставляют ждать.</div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container footer-line">
-      <div>© 2026 Чистый объект</div>
-      <div>Уборка после ремонта • WhatsApp • Юг и центр Израиля</div>
+      <div>© 2026 כל הזכויות שמורות</div>
+      <div>הובלות • ניקיון אחרי שיפוץ • תיקונים קטנים</div>
     </div>
   </footer>
 
   <script>
-    const phone = "972559333531"; // <-- ВСТАВЬ СЮДА СВОЙ НОМЕР В ФОРМАТЕ 972XXXXXXXXX БЕЗ +
-    const text = encodeURIComponent("Здравствуйте. Хочу узнать стоимость уборки после ремонта.");
-    const waLink = `https://wa.me/${phone}?text=${text}`;
+    const phoneMoving = "972500000001";
+    const phoneCleaning = "972500000002";
+    const phoneHandyman = "972500000003";
 
-    ["waTop", "waHero", "waBottom"].forEach(id => {
-      const el = document.getElementById(id);
-      if (el) el.href = waLink;
-    });
+    const msgMoving = encodeURIComponent("שלום, אני מעוניין/ת לקבל פרטים לגבי הובלה.");
+    const msgCleaning = encodeURIComponent("שלום, אני מעוניין/ת לקבל פרטים לגבי ניקיון אחרי שיפוץ.");
+    const msgHandyman = encodeURIComponent("שלום, אני מעוניין/ת לקבל פרטים לגבי תיקונים קטנים / הנדימן.");
+
+    document.getElementById("wa-moving").href = `https://wa.me/${phoneMoving}?text=${msgMoving}`;
+    document.getElementById("wa-cleaning").href = `https://wa.me/${phoneCleaning}?text=${msgCleaning}`;
+    document.getElementById("wa-handyman").href = `https://wa.me/${phoneHandyman}?text=${msgHandyman}`;
   </script>
 </body>
 </html>
